@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yzc.movie">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name=".login" android:theme="@style/AppTheme.Nobar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".main.frame" android:launchMode="singleTask"></activity>
+        <activity android:name=".movieHall.yingtingguanli" android:launchMode="singleTask"></activity>
+        <activity android:name=".forgetpw" android:launchMode="singleTask"></activity>
+        <activity android:name=".movieHall.yingting_listview_first_revise" android:launchMode="singleTask"></activity>
+        <activity android:name=".film.movie"  android:launchMode="singleTask"></activity>
+        <activity android:name=".employee.employee" android:launchMode="singleTask"> </activity>
+        <activity android:name=".employee.employee_add" android:launchMode="singleTask"></activity>
+        <activity android:name=".employee.employee_revise" android:launchMode="singleTask"></activity>
+
+    </application>
+
+</manifest>

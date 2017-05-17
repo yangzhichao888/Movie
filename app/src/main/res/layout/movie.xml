@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.yzc.movie.film.movie"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login">
+
+    <com.example.yzc.movie.Topbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/topbar_movie"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+
+        custom:leftBackground="@color/colorPrimaryDark"
+        custom:leftText="@string/back"
+        custom:leftTextColor="#ffffff"
+
+        custom:rightBackground="@color/colorPrimaryDark"
+        custom:rightText="@string/more"
+        custom:rightTextColor="#ffffff"
+
+        custom:title="@string/movieManager"
+        custom:titleTextColor="#ffffff"
+        custom:titleTextSize="10sp"
+        >
+    </com.example.yzc.movie.Topbar>
+
+    <GridView
+        android:layout_marginTop="30dp"
+        android:id="@+id/gridView_yingpian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="20dp"
+        android:layout_weight="5"
+        android:layout_below="@+id/topbar_yingpian"
+        />
+
+</LinearLayout>

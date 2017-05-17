@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.yzc.movie.main.frame"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+     >
+    <com.example.yzc.movie.Topbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/topbar_frame"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+
+        custom:leftBackground="@color/colorPrimaryDark"
+        custom:leftText="@string/back"
+        custom:leftTextColor="#ffffff"
+
+        custom:rightBackground="@color/colorPrimaryDark"
+        custom:rightText="@string/more"
+        custom:rightTextColor="#ffffff"
+
+        custom:title="@string/movieManagerSystem"
+        custom:titleTextColor="#ffffff"
+        custom:titleTextSize="10sp"
+        >
+    </com.example.yzc.movie.Topbar>
+    <!--
+     GridView是可滚动的网格。一般用来显示多张图片。
+     android:horizontalSpacing="5dp" 两列之间的间距是5dp
+     android:verticalSpacing="5dp" 两行之间的间距是5dp
+     android:stretchMode="spacingWidth" 缩放与列宽大小同步
+     android:numColumns="auto_fit" 本来是一行显示几个，现在改为自动分配
+    -->
+    <GridView
+        android:layout_marginTop="72dp"
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="20dp"
+        android:layout_weight="10"
+        android:layout_below="@+id/topbar"
+        />
+</RelativeLayout>

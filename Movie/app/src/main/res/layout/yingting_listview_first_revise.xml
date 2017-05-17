@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    >
+
+    <TextView
+        android:layout_width="1dp"        android:layout_weight="8"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div" >
+        <!-- 账号 -->
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="影片名"
+            />
+        <EditText
+            android:textColor="@color/gray"
+            android:id="@+id/movie_name_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="人民的名义"
+            android:layout_below="@id/movie_name"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/movie_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_name_edit"
+            android:layout_marginTop="3dp"
+            android:text="时长"
+            />
+
+        <TextView
+            android:textColor="@color/gray"
+            android:id="@+id/movie_time_tv"
+            android:text="128分钟"
+            android:layout_below="@id/movie_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <TextView
+            android:id="@+id/movie_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_time_tv"
+            android:layout_marginTop="3dp"
+            android:text="地区"
+            />
+        <EditText
+
+            android:textColor="@color/gray"
+            android:id="@+id/movie_area_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="大陆"
+            android:layout_below="@id/movie_area"
+            />
+        <TextView
+            android:id="@+id/movie_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_area_edit"
+            android:layout_marginTop="3dp"
+            android:text="导演"
+            />
+        <EditText
+            android:textColor="@color/gray"
+            android:id="@+id/movie_director_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="李路"
+            android:layout_below="@id/movie_director"
+            />
+        <TextView
+            android:id="@+id/movie_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_director_edit"
+            android:layout_marginTop="3dp"
+            android:text="类型"
+            />
+
+        <EditText
+            android:textColor="@color/gray"
+            android:id="@+id/movie_type_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当代 反腐 检查 "
+            android:layout_below="@id/movie_type" />
+        <TextView
+            android:id="@+id/movie_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_type_edit"
+            android:layout_marginTop="3dp"
+            android:text="主演"
+            />
+        <EditText
+            android:textColor="@color/gray"
+            android:id="@+id/movie_actor_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="陆毅、柯蓝、张丰毅、吴刚..."
+            android:layout_below="@id/movie_actor" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_weight="15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认修改"
+            android:id="@+id/bt_yingpian_revise"
+            android:background="@drawable/background_bt_login"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_weight="15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:id="@+id/bt_cancel"
+            android:background="@drawable/background_bt_login"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

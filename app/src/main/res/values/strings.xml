@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">影院管理系统</string>
+    <string name="back">返回</string>
+    <string name="more">更多</string>
+    <string name="employeeManager">员工管理</string>
+    <string name="employeeName">员工姓名</string>
+    <string name="employee_sex">性别</string>
+    <string name="employeePhone">联系方式</string>
+    <string name="employeeJoindate">入职时间</string>
+    <string name="add">确认添加</string>
+    <string name="cancel">取消</string>
+    <string name="movieManagerSystem">剧院管理系统</string>
+    <string name="name">名字</string>
+    <string name="time_1">时间1</string>
+    <string name="time_2">时间2</string>
+    <string name="movieName">电影名</string>
+    <string name="movieManager">影片管理</string>
+    <string name="Add">添加</string>
+    <string name="employee_revise">确认修改</string>
+    <string name="employee_id">员工编号</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.yzc.movie.movieHall.yingtingguanli"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login">
+
+    <com.example.yzc.movie.Topbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/topbar_movieHall"
+        android:background="#408080"
+        android:gravity="center_vertical"
+
+        custom:leftBackground="#408080"
+        custom:leftText="返回"
+        custom:leftTextColor="#ffffff"
+
+        custom:rightBackground="#408080"
+        custom:rightText="更多"
+        custom:rightTextColor="#ffffff"
+
+        custom:title="影厅管理"
+        custom:titleTextColor="#ffffff"
+        custom:titleTextSize="10sp"
+        >
+    </com.example.yzc.movie.Topbar>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_yingting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/tab_yingting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+        </android.support.v4.view.PagerTabStrip>
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

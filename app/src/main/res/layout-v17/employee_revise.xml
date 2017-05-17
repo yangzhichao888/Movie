@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    >
+
+    <TextView
+        android:layout_width="1dp"        android:layout_weight="8"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/employee_id"
+            android:id="@+id/employee_id"
+            />
+        <TextView
+            android:gravity="center_vertical"
+            android:layout_below="@+id/employee_id"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/employee_et_id"
+            />
+        <TextView
+            android:layout_below="@+id/employee_et_id"
+            android:id="@+id/employee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/employeeName"
+            />
+        <ImageView
+            android:src="@mipmap/person"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/employee_image"
+            android:layout_marginLeft="200dp"
+            />
+        <EditText
+            android:textColor="@color/gray"
+            android:id="@+id/employee_name_edit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/employee_name"
+            android:inputType="text"/>
+
+        <TextView
+        android:id="@+id/employee_sex_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employee_name_edit"
+        android:layout_marginTop="3dp"
+        android:text="@string/employee_sex"
+        />
+
+        <EditText
+            android:textSize="20dp"
+            android:textColor="@color/gray"
+            android:id="@+id/employee_sex_edit"
+            android:inputType="text"
+            android:layout_below="@id/employee_sex_tv"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            />
+
+        <TextView
+            android:id="@+id/employee_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/employee_sex_edit"
+            android:layout_marginTop="3dp"
+            android:text="@string/employeePhone"
+            />
+
+        <EditText
+            android:textSize="20dp"
+            android:textColor="@color/gray"
+            android:id="@+id/employee_tel_edit"
+            android:layout_below="@id/employee_tel"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:inputType="phone"
+            />
+        <TextView
+            android:id="@+id/employee_joindate_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/employee_tel_edit"
+            android:layout_marginTop="3dp"
+            android:inputType="text"
+            android:text="@string/employeeJoindate"
+            />
+
+        <EditText
+            android:textSize="20dp"
+            android:textColor="@color/gray"
+            android:id="@+id/employee_joindate_edit"
+            android:inputType="date"
+            android:layout_below="@id/employee_joindate_tv"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_weight="15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/employee_revise"
+            android:id="@+id/bt_employee_revise"
+            android:background="@drawable/background_bt_login"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_weight="15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/bt_employee_cancel"
+            android:background="@drawable/background_bt_login"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
